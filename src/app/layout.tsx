@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import '../utils/fontawesome'; // Importa tu configuración de Font Awesome
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 
