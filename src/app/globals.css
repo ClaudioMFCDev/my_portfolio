@@ -57,3 +57,7 @@ body {
 .bounceInRight-delay-05 {
   animation-delay: 0.5s; /* Retraso de 0.5 segundos */
 }
+
+.svg-icon {
+  fill: currentColor;
+}
