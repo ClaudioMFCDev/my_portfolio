@@ -1,3 +1,4 @@
+"use client";
 import Educacion from "@/components/Educa-com";
 import Footer from "@/components/Foot-com";
 import Presentacion from "@/components/Iam-com";
@@ -6,9 +7,11 @@ import Projectos from "@/components/Proj-com";
 import Separador from "@/components/Separa-com";
 import Tecnos from "@/components/Stack-com";
 
+
+
 export default function Home() {
   return (
-    <main>
+    <div>
       <Navbar />
       <Presentacion />
         <Separador />
@@ -19,6 +22,6 @@ export default function Home() {
       <Educacion />
         <Separador />
       <Footer />
-    </main>
+    </div>
   );
 }

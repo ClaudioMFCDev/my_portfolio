@@ -2,6 +2,6 @@
 
 export default function Separador() {
     return(
-        <div className="w-full bt-4 h-1 border-white bg-white"></div>
+        <div style={{borderColor: '#110979'}} className="w-full bt-4 border-4"></div>
     )
 }

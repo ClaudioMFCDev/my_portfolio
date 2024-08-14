@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #d7d6d6;     
-}
+
 
 @layer utilities {
 .text-balance {
@@ -60,4 +58,51 @@ body {
 
 .svg-icon {
   fill: currentColor;
+}
+
+.my-card{
+  
+  color: white;
+  border-radius: 5px;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 14%, rgba(17,9,121,0.9596288344439339) 100%);
+}
+
+.my-grad{
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 14%, rgba(17,9,121,0.9596288344439339) 100%);
+}
+
+.my-col{
+  background-color: #110979;
+  background: #110979;
+  color: #110979;
+}
+
+.carousel-image {
+  display: flex;
+  justify-content: center;
+  max-width: 600px;  /* Por ejemplo, o cualquier tamaño que necesites */
+  margin: 0 auto;    /* Centrar el contenedor si es necesario */
+}
+
+.carousel-image img {
+  width: 100%;
+  height: auto;  /* Mantiene la proporción */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffffff; /* Color del punto activo */
+}
+
+.carousel-slide {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente (si el contenedor tiene una altura fija) */
+  height: 100%;            /* Asegura que el contenedor ocupe toda la altura disponible */
+}
+
+.carousel-slide img {
+  max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+  height: auto;
 }
