@@ -6,12 +6,24 @@ import Navbar from "@/components/Nav-com";
 import Projectos from "@/components/Proj-com";
 import Separador from "@/components/Separa-com";
 import Tecnos from "@/components/Stack-com";
+import { useEffect, useState } from "react";
 
 
 
 export default function Home() {
+  const [showSpan, setShowSpan] = useState(true);
+
+  useEffect(() => {
+    if (showSpan) {
+      setTimeout(() => {
+        setShowSpan(false);
+      }, 5000);
+    }
+  }, [showSpan]);
+
   return (
     <div>
+      {showSpan && <span className="text-7xl fixed bg-amber-400 m-20 p-10 z-10 rounded">This Portfolio is building...</span>}
       <Navbar />
       <Presentacion />
         <Separador />

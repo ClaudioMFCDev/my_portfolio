@@ -1,8 +1,10 @@
-import Image from "next/image";
 import ImageCarousel from "./ImageCorousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { SiTailwindcss, SiTypescript } from "react-icons/si";
+import { IconContext } from "react-icons";
+import { RiNextjsLine } from "react-icons/ri";
 
 {
   /** Breve descripcion y que tecnologias utilicé */
@@ -42,11 +44,18 @@ const IconWithLabel: React.FC<IconWithLabelProps> = ({
   </div>
 );
 
+// Componente
 export default function Projectos() {
   const images = [
     "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/imagenes/home1.png?t=2024-08-14T13%3A53%3A49.398Z",
     "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/imagenes/login1.png?t=2024-08-14T13%3A54%3A03.554Z",
     "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/imagenes/create1.png?t=2024-08-14T13%3A54%3A20.147Z",
+  ];
+
+  const icons = [
+    { component: SiTailwindcss, label: "Tailwind CSS" },
+    { component: RiNextjsLine, label: "Next.js" },
+    { component: SiTypescript, label: "TypeScript" },
   ];
 
   return (
@@ -55,30 +64,39 @@ export default function Projectos() {
       {/* contenido del projecto */}
       <div className="bg-white rounded mx-12 my-4 p-1 flex">
         {/* carousel */}
-        <div className="w-2/3 h-72 my-grad m-2 pt-4 px-8">
+        <div className="w-4/6 h-72 my-grad m-2 pt-4 px-8">
           <ImageCarousel images={images} />
         </div>
 
         {/* Datos */}
-        <div className=" h-64 ml-4 m-2 rounded text-black content-center bg-amber-200">
+        <div className=" h-72 m-2 rounded text-black content-center bg-amber-200">
           <h2 className="text-xl font-bold text-center">
             Aplicación web de Game of Throne
           </h2>
-          <h1 className="m-1 text-center">
+
+          <p className="m-1 text-center">
             App Web donde puedes crear y editar personajes de la serie GOT. Con
             autenticacion de usuario, conexión a base de datos.
-          </h1>
+          </p>
 
           {/* stacof project */}
-          <div className="flex h-10 pt-1 bg-white">
-            <IconWithLabel svgSrc="/ts.svg" label="" color="#FFFFFF" />
-            <IconWithLabel svgSrc="/ts.svg" label="" color="#FFFFFF" />
-            <IconWithLabel svgSrc="/ts.svg" label="" color="#FFFFFF" />
+          <div className="flex items-center h-10 pt-2 bg-white">
+            <IconContext.Provider
+              value={{ className: "react-icons", color: "blue", size: "1.5em" }}
+            >
+              <div className="flex">
+                {icons.map(({ component: Icon, label }, index) => (
+                  <div key={index} className="flex flex-col items-center mx-2">
+                    <Icon />
+                    <span className="text-sm text-gray-700">{label}</span>
+                  </div>
+                ))}
+              </div>
+            </IconContext.Provider>
           </div>
-
           {/* repo */}
           <div>
-            <FontAwesomeIcon icon={faGithub} style={{ color: "#DDDD" }} />
+            <FontAwesomeIcon icon={faGithub} style={{ color: "#000000" }} />
           </div>
         </div>
       </div>

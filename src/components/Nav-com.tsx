@@ -10,7 +10,7 @@ export default function Navbar(){
                 <a>Clau_Dev</a>
               </Link>
             </div>
-            <div className="h-8 w-8 bg-red-400 rounded-full flex justify-center items-center">
+            <div className="h-8 w-8 bg-deepblue-500 rounded-full flex justify-center items-center">
             <ThemeSwitch/>
             </div>
             <div className="space-x-4">
