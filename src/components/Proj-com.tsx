@@ -80,18 +80,18 @@ export default function Projectos() {
           </p>
 
           {/* stacof project */}
-          <div className="flex items-center h-10 pt-2 bg-white">
+          <div className="flex justify-center h-10 pt-2 bg-white">
             <IconContext.Provider
-              value={{ className: "react-icons", color: "blue", size: "1.5em" }}
+              value={{ className: "react-icons", color: "#534eff", size: "2em" }}
             >
-              <div className="flex">
+              
                 {icons.map(({ component: Icon, label }, index) => (
-                  <div key={index} className="flex flex-col items-center mx-2">
+                  <div key={index} className=" mx-4">
                     <Icon />
-                    <span className="text-sm text-gray-700">{label}</span>
+                    {/* <span className="text-sm text-gray-700">{label}</span> */}
                   </div>
                 ))}
-              </div>
+              
             </IconContext.Provider>
           </div>
           {/* repo */}

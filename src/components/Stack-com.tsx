@@ -8,47 +8,14 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faSquareJs } from "@fortawesome/free-brands-svg-icons/faSquareJs";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import React from "react";
+import IconWithLabel from "./IconWithLabel";
 
-//2 propiedades opcionales
-type IconWithLabelProps = {
-  icon?: IconProp;
-  svgSrc?: string;
-  label: string;
-  color: string;
-};
 
-const IconWithLabel: React.FC<IconWithLabelProps> = ({
-  icon,
-  svgSrc,
-  label,
-  color,
-}) => (
-  <div className="flex flex-col items-center mx-4">
-    <div className="bg-black rounded-full p-2">
-      {icon ? (
-        <FontAwesomeIcon
-          icon={icon}
-          style={{ color: color, width: "40px", height: "40px" }}
-        />
-      ) : (
-        <img
-          src={svgSrc}
-          alt={label}
-          style={{ width: "50px", height: "50px" }}
-          className="svg-icon"
-        />
-      )}
-    </div>
-    <span className="mt-2">{label}</span>
-  </div>
-);
 
 // Iconos con texto. Lenguajes, frameworks y librerias, tecnologias y herramientas
 
-export default function Tecnos() {
+const Tecnos: React.FC = () => {
   return (
     <section className="container mx-auto p-4 mb-6">
       <h3 className="text-7xl text-center">Section Tecnologías</h3>
@@ -72,4 +39,6 @@ export default function Tecnos() {
       </div>
     </section>
   );
-}
+};
+
+export default Tecnos;
