@@ -23,6 +23,7 @@ export default function ThemeSwitch() {
         title="Loading Light/Dark Toggle"
       />
     );
+    
   if (resolvedTheme === "dark") {
     return <FiSun onClick={() => setTheme("light")} />;
   }

@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Presentacion() {
   return (
-    <div className="container  mx-auto p-4 mb-">
+    <div className="container mx-auto p-4 pt-20">
       <section className="flex h- justify-center items-center">
         {/** Div 1 */}
-        <div className=" w-1/2 my-grad rounded text-white p-4 mr-2">
+        <div className=" w-1/2  p-4 mr-2">
           <h3 className="text-6xl font-bold bounceInRight">
             Claudio Castillo</h3>
           <h2 className="text-4xl bounceInRight bounceInRight-delay-05">

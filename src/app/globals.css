@@ -101,3 +101,7 @@ body {
   max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
   height: auto;
 }
+
+html {
+  scroll-behavior: smooth;
+}

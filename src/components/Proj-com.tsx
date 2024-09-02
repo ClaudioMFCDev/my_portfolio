@@ -59,7 +59,7 @@ export default function Projectos() {
   ];
 
   return (
-    <section className="container mx-auto w-2/3 p-4 mb-6 ">
+    <section id="projects" className="container mx-auto w-2/3 p-4 mb-6 ">
       <h3 className="text-7xl text-center">Section Proyectos</h3>
       {/* contenido del projecto */}
       <div className="bg-white mx-12 my-4 p-1 flex border-deepblue-500 border-2 rounded-sm">
