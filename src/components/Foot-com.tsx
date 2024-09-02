@@ -6,17 +6,17 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
-    <section className="container mx-auto h-48 flex justify-center items-center">
-      <div className="flex">
-        <div className="p-4 pr-8 border-r-8 border-white mr-2">
-          <p className="text-5xl">ClauDev</p>
+    <section className="container mx-auto flex justify-center items-center">
+      <div className="flex mt-1 h-16">
+        <div className="p-4 pr-8 border-r-4 border-deepblue-500 mr-2">
+          <p className="text-3xl font-bold text-deepblue-500">ClauDev</p>
         </div>
         <div>
-          <div className=" flex h-24 p-4 bg-whit">
-            <IconWithLabel icon={faLinkedin} label="" url="https://www.linkedin.com/in/claudio-castillo-dev" color="deepblue" />
+          <div className=" flex mt-1">
+            <IconWithLabel icon={faLinkedin} label="" url="https://www.linkedin.com/in/claudio-castillo-dev" color="#8183ff" />
             
-            <IconWithLabel icon={faEnvelope} label="" color="deepblue" copyText="ccmf.dev@gmail.com" />
-            <IconWithLabel icon={faGithub} label="" url="https://github.com/ClaudioMFCDev" color="deepblue" />
+            <IconWithLabel icon={faEnvelope} label="" color="#8183ff" copyText="ccmf.dev@gmail.com" />
+            <IconWithLabel icon={faGithub} label="" url="https://github.com/ClaudioMFCDev" color="#8183ff" />
           </div>
         </div>
       </div>

@@ -1,13 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
 
+body {
+  font-family: 'SUSE', sans-serif !important;
+}
 
 @layer utilities {
 .text-balance {
-  text-wrap: balance;
-}
+  text-wrap: balance;}
 }
 
 @keyframes bounceInRight {
@@ -60,20 +63,12 @@
   fill: currentColor;
 }
 
-.my-card{
-  
-  color: white;
-  border-radius: 5px;
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 14%, rgba(17,9,121,0.9596288344439339) 100%);
-}
-
 .my-grad{
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 14%, rgba(17,9,121,0.9596288344439339) 100%);
+  background: linear-gradient(to top, #534eff, #ffffff);
+
 }
 
-.my-col{
+.my-color{
   background-color: #110979;
   background: #110979;
   color: #110979;
@@ -92,7 +87,7 @@
 }
 
 .slick-dots li.slick-active button:before {
-  color: #ffffff; /* Color del punto activo */
+  color: #000000; /* Color del punto activo */
 }
 
 .carousel-slide {

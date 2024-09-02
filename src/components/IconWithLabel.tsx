@@ -46,7 +46,7 @@ const IconWithLabel: React.FC<IconWithLabelProps> = ({
         onClick={handleClick}
         target={url ? "_blank" : undefined}
         rel="noopener noreferrer"
-        className="bg-black rounded-full p-2 cursor-pointer"
+        className="bg-gray-800 rounded-full p-2 cursor-pointer"
       >
         {icon ? (
           <FontAwesomeIcon

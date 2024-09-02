@@ -17,8 +17,7 @@ import IconWithLabel from "./IconWithLabel";
 
 const Tecnos: React.FC = () => {
   return (
-    <section className="container mx-auto p-4 mb-6">
-      <h3 className="text-7xl text-center">Section Tecnologías</h3>
+    <section className="container mx-auto p-4 my-4">
       <h2 className="text-5xl text-center">Lenguajes</h2>
       <div className="flex items-center justify-center my-4">
         <IconWithLabel icon={faSquareJs} label="JavaScript" color="#FFD43B" />

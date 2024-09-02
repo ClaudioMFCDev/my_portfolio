@@ -60,9 +60,9 @@ export default function Projectos() {
 
   return (
     <section className="container mx-auto w-2/3 p-4 mb-6 ">
-      <h3 className="text-7xl text-center">Section Projectos</h3>
+      <h3 className="text-7xl text-center">Section Proyectos</h3>
       {/* contenido del projecto */}
-      <div className="bg-white rounded mx-12 my-4 p-1 flex">
+      <div className="bg-white mx-12 my-4 p-1 flex border-deepblue-500 border-2 rounded-sm">
         {/* carousel */}
         <div className="w-4/6 h-72 my-grad m-2 pt-4 px-8">
           <ImageCarousel images={images} />
