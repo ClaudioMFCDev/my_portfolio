@@ -8,7 +8,6 @@ import Separador from "@/components/Separa-com";
 import Tecnos from "@/components/Stack-com";
 import { useEffect, useState } from "react";
 
-
 export default function Home() {
   const [showSpan, setShowSpan] = useState(true);
 
@@ -22,16 +21,22 @@ export default function Home() {
 
   return (
     <div>
-      {/* {showSpan && <span className="text-7xl fixed bg-amber-400 m-20 p-10 z-10 rounded">This Portfolio is building...</span>} */}
+      <div className="flex justify-center">
+        {showSpan && (
+          <span className="text-7xl fixed bg-amber-400 m-20 p-10 z-20 rounded">
+            This Portfolio is building...
+          </span>
+        )}
+      </div>
       <Navbar />
       <Presentacion />
-        <Separador />
+      <Separador />
       <Tecnos />
-        <Separador />
+      <Separador />
       <Projectos />
-        <Separador />
+      <Separador />
       <Educacion />
-        <Separador />
+      <Separador />
       <Footer />
     </div>
   );
