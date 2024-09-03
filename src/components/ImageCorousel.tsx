@@ -14,20 +14,26 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    nextArrow: <button type="button" className="slick-next">Next</button>
+    nextArrow: (
+      <button type="button" className="slick-next">
+        Next
+      </button>
+    ),
   };
 
   return (
     <div className="carousel-container">
       <Slider {...settings}>
         {images.map((image, index) => (
-          <div key={index} className="h-64 carousel-slide flex justify-center items-center">
-            <img
-              src={image}
-              alt={`Slide ${index}`}
-              className="h-60"
-              style={{ width: '90%', height: 'auto', objectFit:'cover'}}
-            />
+          <div key={index} className="h-64 carousel-slide">
+            <div className="flex justify-center items-center">
+              <img
+                src={image}
+                alt={`Slide ${index}`}
+                className="h-60"
+                style={{ width: "100%", height: "auto", objectFit: "cover" }}
+              />
+            </div>
           </div>
         ))}
       </Slider>
