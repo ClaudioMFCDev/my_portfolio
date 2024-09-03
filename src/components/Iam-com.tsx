@@ -13,7 +13,7 @@ export default function Presentacion() {
           </h2>
           <p className="text-2xl">
             Hola! Soy un programador con conocimientos frontend y backend.
-            Actualmente enfocado en el desarrollo web.
+            Actualmente enfocado al desarrollo web.
           </p>
         </div>
         {/** Div 2 */}

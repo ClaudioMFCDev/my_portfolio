@@ -21,12 +21,12 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
     <div className="carousel-container">
       <Slider {...settings}>
         {images.map((image, index) => (
-          <div key={index} className="carousel-slide">
+          <div key={index} className="h-64 carousel-slide flex justify-center items-center">
             <img
               src={image}
               alt={`Slide ${index}`}
-              style={{ width: '90%', height: 'auto'}}
-              
+              className="h-60"
+              style={{ width: '90%', height: 'auto', objectFit:'cover'}}
             />
           </div>
         ))}

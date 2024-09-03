@@ -65,41 +65,24 @@ body {
 
 .my-grad{
   background: linear-gradient(to top, #534eff, #ffffff);
-
 }
 
-.my-color{
-  background-color: #110979;
-  background: #110979;
-  color: #110979;
-}
-
-.carousel-image {
-  display: flex;
-  justify-content: center;
-  max-width: 600px;  /* Por ejemplo, o cualquier tamaño que necesites */
-  margin: 0 auto;    /* Centrar el contenedor si es necesario */
-}
-
-.carousel-image img {
-  width: 100%;
-  height: auto;  /* Mantiene la proporción */
-}
-
-.slick-dots li.slick-active button:before {
-  color: #000000; /* Color del punto activo */
+.carousel-container {
+  width: 90%;
+  background-color: #8C52FF;
 }
 
 .carousel-slide {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center;     /* Centra verticalmente (si el contenedor tiene una altura fija) */
-  height: 100%;            /* Asegura que el contenedor ocupe toda la altura disponible */
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  justify-items: center;
 }
 
-.carousel-slide img {
-  max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
-  height: auto;
+
+.slick-dots li.slick-active button:before {
+  color: #000000; /* Color del punto activo */
 }
 
 html {

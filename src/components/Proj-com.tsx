@@ -62,14 +62,14 @@ export default function Projectos() {
     <section id="projects" className="container mx-auto w-2/3 p-4 mb-6 ">
       <h3 className="text-7xl text-center">Section Proyectos</h3>
       {/* contenido del projecto */}
-      <div className="bg-white mx-12 my-4 p-1 flex border-deepblue-500 border-2 rounded-sm">
+      <div className="bg-white my-4 p-1 border-deepblue-500 border-4 rounded-2xl max-lg:flex-wrap flex justify-center items-center ">
         {/* carousel */}
-        <div className="w-4/6 h-72 my-grad m-2 pt-4 px-8">
+        <div className="pb-4 lg:mr-4 lg:w-4/6 lg:h-72 max-xl:w-full bg-deepblue-400 flex justify-center items-center rounded-2xl">
           <ImageCarousel images={images} />
         </div>
 
         {/* Datos */}
-        <div className=" h-72 m-2 rounded text-black content-center bg-amber-200">
+        <div className="m-2 lg:w-2/6 lg:h-72 max-lg:w-full  rounded bg-amber-200 text-black content-center ">
           <h2 className="text-xl font-bold text-center">
             Aplicación web de Game of Throne
           </h2>
