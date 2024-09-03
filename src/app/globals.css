@@ -72,14 +72,6 @@ body {
   background-color: #8C52FF;
 }
 
-.carousel-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  place-items: center;
-  justify-items: center;
-}
-
 
 .slick-dots li.slick-active button:before {
   color: #000000; /* Color del punto activo */
