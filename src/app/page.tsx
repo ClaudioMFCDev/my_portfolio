@@ -20,7 +20,7 @@ export default function Home() {
   }, [showSpan]);
 
   return (
-    <div>
+    <div className="">
       <div className="flex justify-center">
         {showSpan && (
           <span className="text-7xl fixed bg-amber-400 m-20 p-10 z-20 rounded">

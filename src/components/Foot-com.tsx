@@ -1,8 +1,9 @@
 import { faEnvelope, faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "animate.css";
-import IconWithLabel from "./IconWithLabel";
+import IconWithLabel from "./IconWithLabel-dark";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import IconWithLabelDark from "./IconWithLabel-dark";
 
 export default function Footer() {
   return (
@@ -13,10 +14,10 @@ export default function Footer() {
         </div>
         <div>
           <div className=" flex mt-1">
-            <IconWithLabel icon={faLinkedin} label="" url="https://www.linkedin.com/in/claudio-castillo-dev" color="#8183ff" />
+            <IconWithLabelDark icon={faLinkedin} label="" url="https://www.linkedin.com/in/claudio-castillo-dev" color="#8183ff" />
             
-            <IconWithLabel icon={faEnvelope} label="" color="#8183ff" copyText="ccmf.dev@gmail.com" />
-            <IconWithLabel icon={faGithub} label="" url="https://github.com/ClaudioMFCDev" color="#8183ff" />
+            <IconWithLabelDark icon={faEnvelope} label="" color="#8183ff" copyText="ccmf.dev@gmail.com" />
+            <IconWithLabelDark icon={faGithub} label="" url="https://github.com/ClaudioMFCDev" color="#8183ff" />
           </div>
         </div>
       </div>

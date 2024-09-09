@@ -14,7 +14,7 @@ type IconWithLabelProps = {
 };
 
 // Define el componente
-const IconWithLabel: React.FC<IconWithLabelProps> = ({
+const IconWithLabelDark: React.FC<IconWithLabelProps> = ({
   icon,
   svgSrc,
   label,
@@ -73,4 +73,4 @@ const IconWithLabel: React.FC<IconWithLabelProps> = ({
   );
 };
 
-export default IconWithLabel;
+export default IconWithLabelDark;

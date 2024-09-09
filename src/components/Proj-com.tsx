@@ -5,6 +5,9 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { SiTailwindcss, SiTypescript } from "react-icons/si";
 import { IconContext } from "react-icons";
 import { RiNextjsLine } from "react-icons/ri";
+import IconWithLabelDark from "./IconWithLabel-dark";
+import { faGlobe, faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
+import { title } from "process";
 
 {
   /** Breve descripcion y que tecnologias utilicé */
@@ -69,34 +72,47 @@ export default function Projectos() {
         </div>
 
         {/* Datos */}
-        <div className="m-2 lg:w-2/6 lg:h-72 max-lg:w-full  rounded bg-amber-200 text-black content-center ">
-          <h2 className="text-xl font-bold text-center">
+        <div className="m-2 lg:w-2/6 lg:h-72 max-lg:w-full text-white rounded bg-deepblue-400 content-center ">
+          <h2 className="text-xl font-bold text-deepblue-600 text-center">
             Aplicación web de Game of Throne
           </h2>
-
           <p className="m-1 text-center">
             App Web donde puedes crear y editar personajes de la serie GOT. Con
             autenticacion de usuario, conexión a base de datos.
           </p>
-
-          {/* stacof project */}
-          <div className="flex justify-center h-10 pt-2 bg-white">
+          {/* stack of project */}
+          <div className="flex justify-center items-center h-10 bg-white rounded m-1">
             <IconContext.Provider
-              value={{ className: "react-icons", color: "#534eff", size: "2em" }}
+              value={{
+                className: "react-icons",
+                color: "#534eff",
+                size: "2em",
+              }}
             >
-              
-                {icons.map(({ component: Icon, label }, index) => (
-                  <div key={index} className=" mx-4">
-                    <Icon />
-                    {/* <span className="text-sm text-gray-700">{label}</span> */}
-                  </div>
-                ))}
-              
+              {icons.map(({ component: Icon, label }, index) => (
+                <div key={index} className=" mx-4">
+                  <Icon />
+                  {/* <span className="text-sm text-gray-700">{label}</span> */}
+                </div>
+              ))}
             </IconContext.Provider>
           </div>
-          {/* repo */}
-          <div>
-            <FontAwesomeIcon icon={faGithub} style={{ color: "#000000" }} />
+          {/* repo y web */}
+          <div className="flex justify-around items-center mt-2">
+            <div className="flex flex-col justify-around items-center">
+              <FontAwesomeIcon
+                icon={faSquareArrowUpRight}
+                style={{ color: "#000000", width: "30px", height: "30px" }}
+              />
+              <span className="text-xs">Go to web</span>
+            </div>
+            <div className="flex flex-col justify-around items-center">
+              <FontAwesomeIcon
+                icon={faGithub}
+                style={{ color: "#000000", width: "30px", height: "30px" }}
+              />
+              <span className="text-xs">Repository</span>
+            </div>
           </div>
         </div>
       </div>
