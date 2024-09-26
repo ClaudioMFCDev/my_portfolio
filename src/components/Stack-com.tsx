@@ -39,7 +39,7 @@ const iconData = [
 
 const Tecnos: React.FC = () => {
   return (
-    <section id="stack" className="container mx-auto p-4 my-4">
+    <section id="stack" className="container mx-auto p-4 mb-2">
       {iconData.map((section, index) => (
         <div key={index} className="my-4">
           <h2 className="text-5xl text-center text-deepblue-500">

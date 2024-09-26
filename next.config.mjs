@@ -2,7 +2,7 @@
 const nextConfig = {
     //add image drive
     images: {
-        domains: ['drive.google.com']
+        domains: ['drive.google.com', 'thyrybfnmgjezqbsintw.supabase.co']
     }
 };
 
