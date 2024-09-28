@@ -3,14 +3,14 @@ import ThemeSwitch from "./ThemeSwitch-com";
 
 export default function Navbar() {
   return (
-    <nav className="bg-deepblue-600 p-4 w-full fixed z-10 shadow-2xl">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="bg-deepblue-600 p-2 sm:p-4 w-full fixed z-10 shadow-2xl">
+      <div className="container mx-auto flex justify-between items-center max-w-full">
         <div className="text-white text-xl font-bold">
           <Link href="#/" legacyBehavior>
             <a>Clau_Dev</a>
           </Link>
         </div>
-        <div id="links-menu" className="space-x-4 flex items-center">
+        <div id="links-menu" className="space-x-2 sm:space-x-4  flex items-center">
           <Link href="#projects" legacyBehavior>
             <a className="text-white hover:text-deepblue-400">Projects</a>
           </Link>

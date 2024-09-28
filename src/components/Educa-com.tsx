@@ -34,7 +34,7 @@ const educationData: EducationEntry[] = [
 const Educacion: React.FC = () => {
   return (
     <section id="education" className="container mx-auto mt-6">
-      <h3 className="text-5xl text-center text-deepblue-500">Section Educación</h3>
+      <h3 className=" text-4xl sm:text-5xl text-center text-deepblue-500">Education</h3>
       <div className="cards mb-6 flex justify-center items-center flex-col">
         {educationData.map( (entry, index) => (
           <div key={index} className="mt-4 bg-deepblue-500 rounded border-2 w-1/2">

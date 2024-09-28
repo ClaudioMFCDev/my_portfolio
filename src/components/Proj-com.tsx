@@ -80,7 +80,7 @@ const EachProject: React.FC<ProjectProps> = ({
 export default function Projectos() {
   const projects = [
     {
-      title: "Aplicación web de Game of Thrones",
+      title: "Game of Thrones web app",
       description:
         "App Web where you can create GOT's characters. App with user's authentication and bdd conection",
       images: [
@@ -98,7 +98,7 @@ export default function Projectos() {
     },
     //
     {
-      title: "Petshop PATITAS",
+      title: "Petshop 'PATITAS'",
       description:
         "E-commerce about pet's products with search by categories, cart with subtotal, and customer and administrator profiles",
       images: [
@@ -117,7 +117,7 @@ export default function Projectos() {
 
   return (
     <section id="projects" className="container mx-auto w-2/3 p-4 mb-6">
-      <h3 className="text-5xl text-center text-deepblue-500">Projects</h3>
+      <h3 className="text-4xl sm:text-5xl text-center text-deepblue-500">Projects</h3>
       {projects.map((project, index) => (
         <EachProject key={index} {...project} />
       ))}

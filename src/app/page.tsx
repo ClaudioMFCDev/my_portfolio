@@ -31,9 +31,9 @@ export default function Home() {
       <Navbar />
       <Presentacion />
       <Separador />
-      <Tecnos />
-      <Separador />
       <Projectos />
+      <Separador />
+      <Tecnos />
       <Separador />
       <Educacion />
       <Separador />

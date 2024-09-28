@@ -40,29 +40,29 @@ const IconWithLabelDark: React.FC<IconWithLabelProps> = ({
   };
 
   return (
-    <div className="flex flex-col items-center mx-4">
+    <div className="flex flex-col items-center mx-2 sm:mx-4">
       <a
         href={url}
         onClick={handleClick}
         target={url ? "_blank" : undefined}
         rel="noopener noreferrer"
-        className="bg-gray-800 rounded-full p-2 cursor-pointer"
+        className="bg-gray-800 rounded-full  p-1.5 cursor-pointer"
       >
         {icon ? (
           <FontAwesomeIcon
             icon={icon}
-            style={{ color: color, width: "40px", height: "40px" }}
+            style={{ color: color, width: "35px", height: "35px" }}
           />
         ) : (
           <img
             src={svgSrc}
             alt={label}
-            style={{ width: "50px", height: "50px" }}
+            style={{ width: "35px", height: "35px" }}
             className="svg-icon"
           />
         )}
       </a>
-      <span className="mt-2">{label}</span>
+      <span className="mt-1 sm:mt-2 text-sm sm:text-base">{label}</span>
       {/* Message of copied! */}
       {showCopiedMessage && (
         <div className="absolute pb-2 px-2 text-sm bg-deepblue-400 text-white rounded">

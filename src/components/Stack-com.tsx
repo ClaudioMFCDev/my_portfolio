@@ -23,7 +23,7 @@ const iconData = [
     ],
   },
   {
-    title: "Frameworks y Libreries",
+    title: "Frameworks and Libreries",
     items: [
       { icon: faReact, label: "React.js", color: "#61DAFB" },
       { icon: faNode, label: "Node.js", color: "#339933" },
@@ -33,16 +33,16 @@ const iconData = [
   },
   {
     title: "Tecnologies and Tools",
-    items: [{ icon: faDatabase, label: "SQL y NoSQL", color: "#FFD43B" }],
+    items: [{ icon: faDatabase, label: "SQL / NoSQL", color: "#FFD43B" }],
   },
 ];
 
 const Tecnos: React.FC = () => {
   return (
-    <section id="stack" className="container mx-auto p-4 mb-2">
+    <section id="stack" className="container mx-auto p-4 pt-0">
       {iconData.map((section, index) => (
         <div key={index} className="my-4">
-          <h2 className="text-5xl text-center text-deepblue-500">
+          <h2 className="text-4xl sm:text-5xl text-center text-deepblue-500">
             {section.title}
           </h2>
           <div className="flex items-center justify-center my-4">
