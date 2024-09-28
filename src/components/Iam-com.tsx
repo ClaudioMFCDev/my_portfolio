@@ -6,19 +6,40 @@ export default function Presentacion() {
       <section className=" flex flex-col-reverse lg:flex-row h-auto lg:h-96 mx-auto justify-center items-center space-y-4 lg:space-y-0">
         {/** Div 1 */}
         <div className=" w-full lg:w-1/3 p-4 text-center lg:text-left">
-          <h3 className="text-3xl lg:text-6xl font-bold bounceInRight">
-            Claudio Castillo</h3>
-          <h2 className="text-xl lg:text-4xl bounceInRight bounceInRight-delay-05">
+          <h3 className=" text-deepblue-600 text-3xl lg:text-6xl font-bold bounceInRight">
+            Claudio Castillo
+          </h3>
+          <h2 className="text-deepblue-500 text-xl lg:text-4xl bounceInRight bounceInRight-delay-05">
             Fullstack Developer
           </h2>
-          <p className="text-lg lg:text-2xl">
-            Hola! Soy un programador con conocimientos frontend y backend.
-            Actualmente enfocado al desarrollo web.
+          <p className="text-deepblue-500 text-lg lg:text-2xl">
+            Hi, I'm a frontend and backend developer. Currently I'm focusing on
+            web
+            development.
           </p>
+
+          {/* Botones */}
+          <div className="mt-4 space-x-4 flex justify-evenly w-72">
+            <a
+              href="https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/files-docs/cv_english.pdf"
+              download="ClaudioCastillo_CV_English.pdf"
+              className="bg-deepblue-500 text-white hover:font-semibold py-2 px-4 rounded hover:bg-deepblue-700 transition duration-500"
+            >
+              Download CV
+            </a>
+            <a
+              href="https://www.linkedin.com/in/claudio-castillo-dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 text-white hover:font-semibold py-2 px-4 rounded hover:bg-blue-700 transition duration-500"
+            >
+              LinkedIn
+            </a>
+          </div>
         </div>
         {/** Div 2 */}
         <div className=" w-full lg:w-1/3 p-4 flex justify-center max-lg:justify-center">
-          <div className="h-44 w-44 sm:h-54 sm:w-54 lg:h-80 lg:w-80 border-2 bg-deepblue-500 pt-4 flex items-end justify-between rounded-full border-solid border-white">
+          <div className="h-44 w-44 sm:h-54 sm:w-54 lg:h-80 lg:w-80 border-2 shadow-lg shadow-deepblue-300 bg-deepblue-500 pt-4 flex items-end justify-between rounded-full border-solid border-white">
             <Image
               className="rounded-full animate__animated animate__bounce"
               width={400}
