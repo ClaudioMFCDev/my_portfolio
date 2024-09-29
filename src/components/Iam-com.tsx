@@ -13,7 +13,7 @@ export default function Presentacion() {
             Fullstack Developer
           </h2>
           <p className="text-deepblue-500 text-lg lg:text-2xl">
-            Hi, I'm a frontend and backend developer. Currently I'm focusing on
+            Hi, I am a frontend and backend developer. Currently I am focusing on
             web
             development.
           </p>
