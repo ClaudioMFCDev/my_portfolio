@@ -65,7 +65,7 @@ const IconWithLabelDark: React.FC<IconWithLabelProps> = ({
       <span className="mt-1 sm:mt-2 text-sm sm:text-base">{label}</span>
       {/* Message of copied! */}
       {showCopiedMessage && (
-        <div className="absolute pb-2 px-2 text-sm bg-deepblue-400 text-white rounded">
+        <div className="absolute pb-2 px-2 text-sm bg-deepblue-400 text-white rounded ">
           ¡Copiado!
         </div>
       )}

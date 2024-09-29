@@ -5,7 +5,7 @@ export default function Presentacion() {
     <div className="container mx-auto p-4 pt-20">
       <section className=" flex flex-col-reverse lg:flex-row h-auto lg:h-96 mx-auto justify-center items-center space-y-4 lg:space-y-0">
 
-        <div className=" w-full lg:w-1/3 p-4 text-center flex flex-col justify-center max-sm:items-center lg:text-left">
+        <div className=" w-full lg:w-1/3 p-4 text-center lg:text-left">
           <h3 className=" text-deepblue-600 text-3xl lg:text-6xl font-bold bounceInRight">
             Claudio Castillo
           </h3>
@@ -18,7 +18,7 @@ export default function Presentacion() {
 
 
 
-          <div className="mt-4 space-x-4 flex justify-center sm:justify-evenly w-72 ">
+          <div className="mt-4 space-x-4 flex justify-evenly w-72">
             <a
               href="https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/files-docs/cv_english.pdf"
               download="ClaudioCastillo_CV_English.pdf"

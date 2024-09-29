@@ -18,7 +18,6 @@ export default function Navbar() {
             <a>ClauDev</a>
           </Link>
         </div>
-        {/* Icono hamburguesa */}
         <div
           className="sm:hidden text-white text-2xl cursor-pointer"
           onClick={toggleMenu}
@@ -28,7 +27,7 @@ export default function Navbar() {
         <div
           id="links-menu"
           className={`space-x-2 sm:space-x-4 flex-col sm:flex-row flex sm:flex items-center absolute sm:static top-12 left-0 w-full sm:w-auto bg-deepblue-600 sm:bg-transparent sm:p-0 p-4 transition-transform duration-300 ${
-            menuOpen ? "flex" : "hidden"
+            menuOpen ? 'flex' : 'hidden'
           }`}
         >
           <Link href="#projects" legacyBehavior>
