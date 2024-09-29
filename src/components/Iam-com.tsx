@@ -4,7 +4,7 @@ export default function Presentacion() {
   return (
     <div className="container mx-auto p-4 pt-20">
       <section className=" flex flex-col-reverse lg:flex-row h-auto lg:h-96 mx-auto justify-center items-center space-y-4 lg:space-y-0">
-        {/** Div 1 */}
+
         <div className=" w-full lg:w-1/3 p-4 text-center lg:text-left">
           <h3 className=" text-deepblue-600 text-3xl lg:text-6xl font-bold bounceInRight">
             Claudio Castillo
@@ -18,7 +18,8 @@ export default function Presentacion() {
             development.
           </p>
 
-          {/* Botones */}
+
+
           <div className="mt-4 space-x-4 flex justify-evenly w-72">
             <a
               href="https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/files-docs/cv_english.pdf"
@@ -37,7 +38,8 @@ export default function Presentacion() {
             </a>
           </div>
         </div>
-        {/** Div 2 */}
+
+
         <div className=" w-full lg:w-1/3 p-4 flex justify-center max-lg:justify-center">
           <div className="h-44 w-44 sm:h-54 sm:w-54 lg:h-80 lg:w-80 border-2 shadow-lg shadow-deepblue-300 bg-deepblue-500 pt-4 flex items-end justify-between rounded-full border-solid border-white">
             <Image
