@@ -57,15 +57,15 @@ const IconWithLabelDark: React.FC<IconWithLabelProps> = ({
             style={{ color: color, width: "35px", height: "35px" }}
           />
         ) : ReactIcon ? (
-          <ReactIcon size={35} color={color} /> // Usa el componente de react-icons
-        ) : (
+          <ReactIcon size={35} color={color} />
+        ) : svgSrc ? (
           <img
             src={svgSrc}
             alt={label}
             style={{ width: "35px", height: "35px" }}
             className="svg-icon"
           />
-        )}
+        ): null}
       </a>
       <span className="mt-1 sm:mt-2 text-sm sm:text-base">{label}</span>
       {/* Message of copied! */}

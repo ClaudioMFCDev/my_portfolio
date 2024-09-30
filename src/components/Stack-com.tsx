@@ -12,39 +12,37 @@ import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import { SiMongodb } from "react-icons/si";
 import { RiSupabaseLine } from "react-icons/ri";
 import { CgVercel } from "react-icons/cg";
-
-
-
 import React from "react";
 import IconWithLabel from "./IconWithLabel-dark";
+
 
 const iconData = [
   {
     title: "Languages",
     items: [
-      { icon: faSquareJs, label: "Javascript", color: "#FFD43B" },
-      { icon: faPython, label: "Python", color: "#306998" },
-      { icon: faHtml5, label: "HTML5", color: "#E34F26" },
-      { icon: faCss3Alt, label: "CSS3", color: "#1572B6" },
+      { icon: faSquareJs, label: "Javascript", color: "#FFD43B", svgSrc:"", reactIcon:null },
+      { icon: faPython, label: "Python", color: "#306998", svgSrc:"", reactIcon:null },
+      { icon: faHtml5, label: "HTML5", color: "#E34F26", svgSrc:"", reactIcon:null },
+      { icon: faCss3Alt, label: "CSS3", color: "#1572B6", svgSrc:"", reactIcon:null  },
     ],
   },
   {
     title: "Frameworks and Libreries",
     items: [
-      { icon: faReact, label: "React.js", color: "#61DAFB" },
-      { icon: faNode, label: "Node.js", color: "#339933" },
-      { icon: faBootstrap, label: "Bootstrap", color: "#7952B3" },
-      { svgSrc: "/tailwind.svg", label: "Tailwind", color: "#38B2AC" },
+      { icon: faReact, label: "React.js", color: "#61DAFB", svgSrc:"", reactIcon:null },
+      { icon: faNode, label: "Node.js", color: "#339933", svgSrc:"", reactIcon:null  },
+      { icon: faBootstrap, label: "Bootstrap", color: "#7952B3", svgSrc:"", reactIcon:null },
+      { svgSrc: "/tailwind.svg", label: "Tailwind", color: "#38B2AC", reactIcon:null},
     ],
   },
   {
     title: "Tecnologies and Tools",
     items: [
-      { icon: faDatabase, label: "SQL Server", color: "#FFD43B" },
-      { reactIcon: SiMongodb, label: "MongoDB", color: "#09b025" },
-      { reactIcon: RiSupabaseLine, label: "Supabase", color: "#2f9440" },
-      { reactIcon: CgVercel, label: "Vercel", color: "#FFFFFF" },
-      { icon: faGithub, label: "GitHub", color: "#FFFFFF" },
+      { icon: faDatabase, label: "SQL Server", color: "#FFD43B", svgSrc:"", reactIcon:null },
+      { reactIcon: SiMongodb, label: "MongoDB", color: "#09b025", svgSrc:"", icon: null  },
+      { reactIcon: RiSupabaseLine, label: "Supabase", color: "#2f9440", svgSrc:"", icon: null  },
+      { reactIcon: CgVercel, label: "Vercel", color: "#FFFFFF", svgSrc:"", icon: null  },
+      { icon: faGithub, label: "GitHub", color: "#FFFFFF", svgSrc:"", reactIcon:null  },
     ],
   },
 ];
@@ -61,11 +59,11 @@ const Tecnos: React.FC = () => {
             {section.items.map((item, i) => (
               <IconWithLabel
                 key={i}
-                icon={item.icon}
-                reactIcon={item.reactIcon}
-                svgSrc={item.svgSrc}
                 label={item.label}
                 color={item.color}
+                {...(item.icon ? { icon: item.icon } : {})}
+                {...(item.svgSrc ? { svgSrc: item.svgSrc } : {})}
+                {...(item.reactIcon ? { reactIcon: item.reactIcon } : {})}
               />
             ))}
           </div>
