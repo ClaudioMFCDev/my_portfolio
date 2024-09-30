@@ -1,6 +1,7 @@
 import {
   faBootstrap,
   faCss3Alt,
+  faGithub,
   faHtml5,
   faNode,
   faPython,
@@ -9,9 +10,13 @@ import {
 import { faSquareJs } from "@fortawesome/free-brands-svg-icons/faSquareJs";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import { SiMongodb } from "react-icons/si";
+import { RiSupabaseLine } from "react-icons/ri";
+import { CgVercel } from "react-icons/cg";
+
+
+
 import React from "react";
 import IconWithLabel from "./IconWithLabel-dark";
-import { title } from "process";
 
 const iconData = [
   {
@@ -35,8 +40,11 @@ const iconData = [
   {
     title: "Tecnologies and Tools",
     items: [
-      { icon: faDatabase, label: "SQL Server Management", color: "#FFD43B" },
-      { reactIcon: SiMongodb, label: "MongoDB", color: "#FFD43B" },
+      { icon: faDatabase, label: "SQL Server", color: "#FFD43B" },
+      { reactIcon: SiMongodb, label: "MongoDB", color: "#09b025" },
+      { reactIcon: RiSupabaseLine, label: "Supabase", color: "#2f9440" },
+      { reactIcon: CgVercel, label: "Vercel", color: "#FFFFFF" },
+      { icon: faGithub, label: "GitHub", color: "#FFFFFF" },
     ],
   },
 ];
