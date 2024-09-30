@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faSquareJs } from "@fortawesome/free-brands-svg-icons/faSquareJs";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { SiMongodb } from "react-icons/si";
 import React from "react";
 import IconWithLabel from "./IconWithLabel-dark";
 import { title } from "process";
@@ -33,7 +34,10 @@ const iconData = [
   },
   {
     title: "Tecnologies and Tools",
-    items: [{ icon: faDatabase, label: "SQL / NoSQL", color: "#FFD43B" }],
+    items: [
+      { icon: faDatabase, label: "SQL Server Management", color: "#FFD43B" },
+      { reactIcon: SiMongodb, label: "MongoDB", color: "#FFD43B" },
+    ],
   },
 ];
 
@@ -50,6 +54,7 @@ const Tecnos: React.FC = () => {
               <IconWithLabel
                 key={i}
                 icon={item.icon}
+                reactIcon={item.reactIcon}
                 svgSrc={item.svgSrc}
                 label={item.label}
                 color={item.color}

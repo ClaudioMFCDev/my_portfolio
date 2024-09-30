@@ -89,3 +89,19 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.text-shadow {
+  text-shadow: 0.2px 0.2px 1px rgb(255, 255, 255);
+}
+
+.text-shadow-mr {
+  text-shadow: 2px 1px 1px rgba(255, 255, 255, 1);
+}
+
+.text-shadow-lg {
+  text-shadow: 6px 6px 12px rgba(255, 255, 255, 0.3);
+}
+
+.custom-shadow-white {
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.5);
+}

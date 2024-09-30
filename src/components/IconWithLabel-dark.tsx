@@ -2,10 +2,12 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { IconType } from "react-icons"; // Importa el tipo de react-icons
 
 // Define las props para el componente
 type IconWithLabelProps = {
   icon?: IconProp;
+  reactIcon?: IconType;
   svgSrc?: string;
   label: string;
   color: string;
@@ -16,6 +18,7 @@ type IconWithLabelProps = {
 // Define el componente
 const IconWithLabelDark: React.FC<IconWithLabelProps> = ({
   icon,
+  reactIcon: ReactIcon,
   svgSrc,
   label,
   color,
@@ -53,6 +56,8 @@ const IconWithLabelDark: React.FC<IconWithLabelProps> = ({
             icon={icon}
             style={{ color: color, width: "35px", height: "35px" }}
           />
+        ) : ReactIcon ? (
+          <ReactIcon size={35} color={color} /> // Usa el componente de react-icons
         ) : (
           <img
             src={svgSrc}

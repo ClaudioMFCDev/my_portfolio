@@ -5,11 +5,11 @@ export default function Presentacion() {
     <div className="container mx-auto p-4 pt-20">
       <section className=" flex flex-col-reverse lg:flex-row h-auto lg:h-96 mx-auto justify-center items-center space-y-4 lg:space-y-0">
 
-        <div className=" w-full lg:w-1/3 p-4 text-center flex flex-col justify-center max-sm:items-center lg:text-left">
-          <h3 className=" text-deepblue-600 text-3xl lg:text-6xl font-bold bounceInRight">
+        <div className=" w-full lg:w-1/3 p-4 text-center flex flex-col justify-center max-lg:items-center lg:text-left">
+          <h3 className=" text-deepblue-600 text-3xl text-shadow-mr lg:text-6xl font-bold bounceInRight">
             Claudio Castillo
           </h3>
-          <h2 className="text-deepblue-500 text-xl lg:text-4xl bounceInRight bounceInRight-delay-05">
+          <h2 className="text-deepblue-500 text-xl text-shadow lg:text-4xl bounceInRight bounceInRight-delay-05">
             Fullstack Developer
           </h2>
           <p className="text-deepblue-500 text-lg lg:text-2xl">
@@ -39,9 +39,9 @@ export default function Presentacion() {
 
 
         <div className=" w-full lg:w-1/3 p-4 flex justify-center max-lg:justify-center">
-          <div className="h-44 w-44 sm:h-54 sm:w-54 lg:h-80 lg:w-80 border-2 shadow-lg shadow-deepblue-300 bg-deepblue-500 pt-4 flex items-end justify-between rounded-full border-solid border-white">
+          <div className="h-44 w-44 sm:h-54 sm:w-54 lg:h-80 lg:w-80 border-2 shadow-lg shadow-deepblue-300  bg-deepblue-500 dark:bg-white pt-4 flex items-end justify-between rounded-full border-solid border-white">
             <Image
-              className="rounded-full animate__animated animate__bounce"
+              className="rounded-full animate__animated animate__bounce drop-shadow-2xl"
               width={400}
               height={200}
               style={{ objectFit: "cover" }}

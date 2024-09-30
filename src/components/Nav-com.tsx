@@ -39,10 +39,10 @@ export default function Navbar() {
           <Link href="#education" legacyBehavior>
             <a className="text-white hover:text-deepblue-400">Education</a>
           </Link>
-          <Link href="#contact" legacyBehavior>
+          <Link href="#footer" legacyBehavior>
             <a className="text-white hover:text-deepblue-400">Contact</a>
           </Link>
-          <div className="w-8 h-8 rounded-full border-2 border-white flex justify-center items-center cursor-pointer">
+          <div className="w-8 h-8 rounded-full border-2 dark:border-white bg-white dark:bg-black flex justify-center items-center cursor-pointer">
             <ThemeSwitch />
           </div>
         </div>
