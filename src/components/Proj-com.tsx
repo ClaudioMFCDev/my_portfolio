@@ -104,9 +104,9 @@ export default function Projectos() {
       description:
         "Game about an space invasion, the classic game where you can shot the invaders, which increases your score, until one of the ships manages to touch you",
       images: [
-        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/invasion_espacial_1.png",
-        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/invasion_espacial_2.png",
-        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/invasion_espacial_3.png",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/invasion_1.png",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/invasion_2.png",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/invasion_3.png",
       ],
       technologies: [
         { component: SiPython, label: "Python" },
