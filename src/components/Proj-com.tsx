@@ -3,11 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiBootstrap, SiCss3, SiCsswizardry, SiDjango, SiPython, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { RiNextjsLine } from "react-icons/ri";
 import { IconContext } from "react-icons";
 import { FaBootstrap, FaPhp } from "react-icons/fa";
-import { DiCodeigniter } from "react-icons/di";
+import { DiCodeigniter, DiDjango } from "react-icons/di";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { GiSnakeSpiral } from "react-icons/gi";
 
 // Propiedades del proyecto
 type ProjectProps = {
@@ -40,11 +42,12 @@ const EachProject: React.FC<ProjectProps> = ({
       <p className="m-1 text-center">{description}</p>
 
       {/* Stack de tecnologías */}
-      <div className="flex justify-center items-center h-10 bg-white rounded m-1">
-        <IconContext.Provider value={{ className: "react-icons", size: "2em", color: "#534eff"}}>
-          {technologies.map(({ component: Icon }, index) => (
-            <div key={index} className="mx-4">
+      <div className="flex justify-center items-center h-14 bg-white rounded m-1">
+        <IconContext.Provider value={{ className: "react-icons", size: "2em", color: "#534eff" }}>
+          {technologies.map(({ component: Icon, label }, index) => (
+            <div key={index} className="flex flex-col items-center mx-4">
               <Icon />
+              <span className="mt-1 text-xs text-gray-600">{label}</span>
             </div>
           ))}
         </IconContext.Provider>
@@ -89,12 +92,45 @@ export default function Projectos() {
         "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/imagenes/create1.png",
       ],
       technologies: [
-        { component: SiTailwindcss, label: "Tailwind CSS" },
+        { component: SiTailwindcss, label: "Tailwind" },
         { component: RiNextjsLine, label: "Next.js" },
         { component: SiTypescript, label: "TypeScript" },
       ],
       repoLink: "https://github.com/ClaudioMFCDev/GOT-api-next",
       liveLink: "https://got-api-nextjs.vercel.app",
+    },
+    {
+      title: "Space Invasion Game",
+      description:
+        "Game about an space invasion, the classic game where you can shot the invaders, which increases your score, until one of the ships manages to touch you",
+      images: [
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/invasion_espacial_1.png",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/invasion_espacial_2.png",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/invasion_espacial_3.png",
+      ],
+      technologies: [
+        { component: SiPython, label: "Python" },
+        { component: GiSnakeSpiral, label: "PyGame" },
+      ],
+      repoLink: "https://github.com/ClaudioMFCDev/space_invasion.git",
+      liveLink: "",
+    },
+    {
+      title: "FreeTransfer App",
+      description:
+        "App that simulates a virtual wallet, where new users can register, make transfers to favorite users.",
+      images: [
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/sign/projects/freetransfer_home.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9mcmVldHJhbnNmZXJfaG9tZS5wbmciLCJpYXQiOjE3MzI2NDk3MDMsImV4cCI6MjA0ODAwOTcwM30.asRtcNSPJoKRJHFlgIqjvNI6xumRvjRVjWDxGV9fMV8",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/freetransfer_movimientos.png",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/freetransfer_favoritos.png",
+      ],
+      technologies: [
+        { component: SiBootstrap, label: "Bootstrap" },
+        { component: BiLogoPostgresql, label: "PostGresql" },
+        { component: DiDjango, label: "Django" },
+      ],
+      repoLink: "https://github.com/ClaudioMFCDev/free_trasnsfer",
+      liveLink: "",
     },
     //
     {
