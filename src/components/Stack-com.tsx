@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faSquareJs } from "@fortawesome/free-brands-svg-icons/faSquareJs";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
-import { SiMongodb } from "react-icons/si";
+import { SiDjango, SiMongodb } from "react-icons/si";
 import { RiSupabaseLine } from "react-icons/ri";
 import { CgVercel } from "react-icons/cg";
 import React from "react";
@@ -31,6 +31,7 @@ const iconData = [
     items: [
       { icon: faReact, label: "React.js", color: "#61DAFB", svgSrc:"", reactIcon:null },
       { icon: faNode, label: "Node.js", color: "#339933", svgSrc:"", reactIcon:null  },
+      { icon: null , label: "Django", color: "#2b7530", svgSrc:"", reactIcon: SiDjango  },
       { icon: faBootstrap, label: "Bootstrap", color: "#7952B3", svgSrc:"", reactIcon:null },
       { svgSrc: "/tailwind.svg", label: "Tailwind", color: "#38B2AC", reactIcon:null},
     ],
