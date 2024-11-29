@@ -156,10 +156,9 @@ export default function Projectos() {
       description:
         "Analysis of a data set of Titanic survivors, training of a decision tree and measuring its results",
       images: [
-        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/fac1.png",
-        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/fac2.png",
-        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/fac3.png",
-        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/fac4.png",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/mll1.png",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/mll2.png",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/mll3.png",
       ],
       technologies: [
         { component: SiGooglecolab, label: "Google Colab" },
