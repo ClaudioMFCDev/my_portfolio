@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { SiBootstrap, SiCss3, SiCsswizardry, SiDjango, SiPython, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiBootstrap, SiCss3, SiCsswizardry, SiDjango, SiGooglecolab, SiPython, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { RiNextjsLine } from "react-icons/ri";
 import { IconContext } from "react-icons";
-import { FaBootstrap, FaPhp } from "react-icons/fa";
+import { FaBootstrap, FaPhp, FaTable } from "react-icons/fa";
 import { DiCodeigniter, DiDjango } from "react-icons/di";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { GiSnakeSpiral } from "react-icons/gi";
@@ -100,22 +100,6 @@ export default function Projectos() {
       liveLink: "https://got-api-nextjs.vercel.app",
     },
     {
-      title: "Space Invasion Game",
-      description:
-        "Game about an space invasion, the classic game where you can shot the invaders, which increases your score, until one of the ships manages to touch you",
-      images: [
-        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/invasion_1.png",
-        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/invasion_2.png",
-        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/invasion_3.png",
-      ],
-      technologies: [
-        { component: SiPython, label: "Python" },
-        { component: GiSnakeSpiral, label: "PyGame" },
-      ],
-      repoLink: "https://github.com/ClaudioMFCDev/space_invasion.git",
-      liveLink: "",
-    },
-    {
       title: "FreeTransfer App",
       description:
         "App that simulates a virtual wallet, where new users can register, make transfers to favorite users.",
@@ -133,6 +117,57 @@ export default function Projectos() {
       liveLink: "",
     },
     //
+    {
+      title: "Restorant App",
+      description:
+        "App to make tickets for a restaurant, including a list of drinks, meals and desserts",
+      images: [
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/fac1.png",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/fac2.png",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/fac3.png",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/fac4.png",
+      ],
+      technologies: [
+        { component: FaTable, label: "Tkintertable" },
+        { component: SiPython, label: "Python" },
+      ],
+      repoLink: "https://github.com/ClaudioMFCDev/free_trasnsfer",
+      liveLink: "",
+    },
+    //
+    {
+      title: "Space Invasion Game",
+      description:
+        "Game about an space invasion, the classic game where you can shot the invaders, which increases your score, until one of the ships manages to touch you",
+      images: [
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/invasion_1.png",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/invasion_2.png",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/invasion_3.png",
+      ],
+      technologies: [
+        { component: SiPython, label: "Python" },
+        { component: GiSnakeSpiral, label: "PyGame" },
+      ],
+      repoLink: "https://github.com/ClaudioMFCDev/space_invasion.git",
+      liveLink: "",
+    },
+    {
+      title: "Titanic machine learning",
+      description:
+        "Analysis of a data set of Titanic survivors, training of a decision tree and measuring its results",
+      images: [
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/fac1.png",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/fac2.png",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/fac3.png",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/fac4.png",
+      ],
+      technologies: [
+        { component: SiGooglecolab, label: "Google Colab" },
+        { component: SiPython, label: "Python" },
+      ],
+      repoLink: "https://colab.research.google.com/drive/11ad5tmBNc0bCobEVtysIVRzrf34gp8h5?usp=sharing",
+      liveLink: "https://drive.google.com/file/d/1mnwQcaCTu2UTOr26D7bkZzdArv--kJWZ/view?usp=sharing",
+    },
     {
       title: "Petshop 'PATITAS'",
       description:
