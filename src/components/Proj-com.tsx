@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { SiBootstrap, SiCss3, SiCsswizardry, SiDjango, SiGooglecolab, SiPython, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiBootstrap, SiCss3, SiCsswizardry, SiDjango, SiGooglecolab, SiNestjs, SiPython, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { RiNextjsLine } from "react-icons/ri";
 import { IconContext } from "react-icons";
 import { FaBootstrap, FaPhp, FaTable } from "react-icons/fa";
@@ -93,7 +93,7 @@ export default function Projectos() {
       ],
       technologies: [
         { component: SiTailwindcss, label: "Tailwind" },
-        { component: RiNextjsLine, label: "Nest.js" },
+        { component: SiNestjs, label: "Nest.js" },
         { component: SiTypescript, label: "TypeScript" },
       ],
       repoLink: "https://github.com/ClaudioMFCDev/GOT-api-next",
