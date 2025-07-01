@@ -96,8 +96,8 @@ export default function Projectos() {
         { component: SiNestjs, label: "Nest.js" },
         { component: SiTypescript, label: "TypeScript" },
       ],
-      repoLink: "https://github.com/ClaudioMFCDev/GOT-api-next",
-      liveLink: "https://got-api-nextjs.vercel.app",
+      repoLink: "https://github.com/No-Country-simulation/s21-21-webapp",
+      liveLink: "https://cine-astas.vercel.app/",
     },
     {
       title: "Game of Thrones web app",
