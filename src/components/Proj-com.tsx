@@ -89,7 +89,7 @@ export default function Projectos() {
       images: [
         "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/cineastas//cine1.png",
         "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/cineastas//cine2.png",
-        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/imagenes//cine3.png",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/cineastas//cine3.png",
       ],
       technologies: [
         { component: SiTailwindcss, label: "Tailwind" },
