@@ -83,6 +83,23 @@ const EachProject: React.FC<ProjectProps> = ({
 export default function Projectos() {
   const projects = [
     {
+      title: "CineAstas web app",
+      description:
+        "App Web where you can create GOT's characters. App with user's authentication and bdd conection",
+      images: [
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/cineastas//cine1.png",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/cineastas//cine2.png",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/imagenes//cine3.png",
+      ],
+      technologies: [
+        { component: SiTailwindcss, label: "Tailwind" },
+        { component: RiNextjsLine, label: "Nest.js" },
+        { component: SiTypescript, label: "TypeScript" },
+      ],
+      repoLink: "https://github.com/ClaudioMFCDev/GOT-api-next",
+      liveLink: "https://got-api-nextjs.vercel.app",
+    },
+    {
       title: "Game of Thrones web app",
       description:
         "App Web where you can create GOT's characters. App with user's authentication and bdd conection",
