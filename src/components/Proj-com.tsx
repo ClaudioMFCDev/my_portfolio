@@ -3,13 +3,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { SiBootstrap, SiCss3, SiCsswizardry, SiDjango, SiGooglecolab, SiNestjs, SiPython, SiTailwindcss, SiTypescript } from "react-icons/si";
+import {
+  SiBootstrap,
+  SiCss3,
+  SiCsswizardry,
+  SiDjango,
+  SiGooglecolab,
+  SiNestjs,
+  SiPython,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 import { RiNextjsLine } from "react-icons/ri";
 import { IconContext } from "react-icons";
 import { FaBootstrap, FaPhp, FaTable } from "react-icons/fa";
 import { DiCodeigniter, DiDjango } from "react-icons/di";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { GiSnakeSpiral } from "react-icons/gi";
+import { useState } from "react";
 
 // Propiedades del proyecto
 type ProjectProps = {
@@ -38,12 +49,16 @@ const EachProject: React.FC<ProjectProps> = ({
 
     {/* Datos del proyecto */}
     <div className="m-2 lg:w-2/6 lg:h-72 max-lg:w-full max-lg:mt-4 text-white rounded lg:rounded-l-2xl bg-deepblue-400 content-around">
-      <h2 className="text-xl font-bold text-deepblue-600 text-center">{title}</h2>
+      <h2 className="text-xl font-bold text-deepblue-600 text-center">
+        {title}
+      </h2>
       <p className="m-1 text-center">{description}</p>
 
       {/* Stack de tecnologías */}
       <div className="flex justify-center items-center h-14 bg-white rounded m-1">
-        <IconContext.Provider value={{ className: "react-icons", size: "2em", color: "#534eff" }}>
+        <IconContext.Provider
+          value={{ className: "react-icons", size: "2em", color: "#534eff" }}
+        >
           {technologies.map(({ component: Icon, label }, index) => (
             <div key={index} className="flex flex-col items-center mx-4">
               <Icon />
@@ -55,22 +70,34 @@ const EachProject: React.FC<ProjectProps> = ({
 
       {/* Enlaces de repo y sitio web */}
       <div className="flex justify-around items-center mt-2">
-        {liveLink ? 
-          (
-            <a href={liveLink} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
-              <FontAwesomeIcon icon={faSquareArrowUpRight} className="text-black w-6 h-6" />
-              <span className="text-xs">Go to web</span>
-            </a>
-          ) :
-          (
-            <div className="flex flex-col items-center">
-              <FontAwesomeIcon icon={faSquareArrowUpRight} className="text-black w-6 h-6" />
-              <span className="text-xs">No online</span>
-            </div>
-          )
-      
-        }
-        <a href={repoLink} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
+        {liveLink ? (
+          <a
+            href={liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center"
+          >
+            <FontAwesomeIcon
+              icon={faSquareArrowUpRight}
+              className="text-black w-6 h-6"
+            />
+            <span className="text-xs">Go to web</span>
+          </a>
+        ) : (
+          <div className="flex flex-col items-center">
+            <FontAwesomeIcon
+              icon={faSquareArrowUpRight}
+              className="text-black w-6 h-6"
+            />
+            <span className="text-xs">No online</span>
+          </div>
+        )}
+        <a
+          href={repoLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-col items-center"
+        >
           <FontAwesomeIcon icon={faGithub} className="text-black w-6 h-6" />
           <span className="text-xs">Repository</span>
         </a>
@@ -81,11 +108,30 @@ const EachProject: React.FC<ProjectProps> = ({
 
 // Componente principal
 export default function Projectos() {
+  const [showAll, setShowAll] = useState(false);
+
   const projects = [
+    {
+      title: "ClassRun",
+      description:
+        "App Web built by team (No Country) where you can manage students and teachers' information.",
+      images: [
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/classrun//classrun1.jpg",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/classrun//classrun2.jpg",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/classrun//classrun3.jpg",
+      ],
+      technologies: [
+        { component: SiTailwindcss, label: "Tailwind" },
+        { component: SiNestjs, label: "Nest.js" },
+        { component: SiTypescript, label: "TypeScript" },
+      ],
+      repoLink: "https://github.com/No-Country-simulation/s21-21-webapp",
+      liveLink: "https://cine-astas.vercel.app/",
+    },
     {
       title: "CineAstas web app",
       description:
-        "App Web where you can create GOT's characters. App with user's authentication and bdd conection",
+        "App Web built by team (No Country) where you can watch new movies and buy tickets for them.",
       images: [
         "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/cineastas//cine1.png",
         "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/cineastas//cine2.png",
@@ -98,6 +144,23 @@ export default function Projectos() {
       ],
       repoLink: "https://github.com/No-Country-simulation/s21-21-webapp",
       liveLink: "https://cine-astas.vercel.app/",
+    },
+    {
+      title: "Adopt your pet",
+      description:
+        "App Web built by team (No Country) where you can differents pets and adopt them by a form.",
+      images: [
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/adopt//adopta%20tu%20mascota.jpg",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/adopt//adopta%20tu%20mascota.jpg",
+        "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/adopt//adopta%20tu%20mascota.jpg",                
+      ],
+      technologies: [
+        { component: SiTailwindcss, label: "Tailwind" },
+        { component: SiNestjs, label: "Next.js" },
+        { component: SiTypescript, label: "TypeScript" },
+      ],
+      repoLink: "https://github.com/No-Country-simulation/c21-18-m-node-react",
+      liveLink: "",
     },
     {
       title: "Game of Thrones web app",
@@ -119,7 +182,7 @@ export default function Projectos() {
     {
       title: "FreeTransfer App",
       description:
-        "App that simulates a virtual wallet, where new users can register, make transfers to favorite users.",
+        "App built by team (ECOM) that simulates a virtual wallet, where new users can register, make transfers to favorite users.",
       images: [
         "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/sign/projects/freetransfer_home.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9mcmVldHJhbnNmZXJfaG9tZS5wbmciLCJpYXQiOjE3MzI2NDk3MDMsImV4cCI6MjA0ODAwOTcwM30.asRtcNSPJoKRJHFlgIqjvNI6xumRvjRVjWDxGV9fMV8",
         "https://thyrybfnmgjezqbsintw.supabase.co/storage/v1/object/public/projects/freetransfer_movimientos.png",
@@ -181,8 +244,10 @@ export default function Projectos() {
         { component: SiGooglecolab, label: "Google Colab" },
         { component: SiPython, label: "Python" },
       ],
-      repoLink: "https://colab.research.google.com/drive/11ad5tmBNc0bCobEVtysIVRzrf34gp8h5?usp=sharing",
-      liveLink: "https://drive.google.com/file/d/1mnwQcaCTu2UTOr26D7bkZzdArv--kJWZ/view?usp=sharing",
+      repoLink:
+        "https://colab.research.google.com/drive/11ad5tmBNc0bCobEVtysIVRzrf34gp8h5?usp=sharing",
+      liveLink:
+        "https://drive.google.com/file/d/1mnwQcaCTu2UTOr26D7bkZzdArv--kJWZ/view?usp=sharing",
     },
     {
       title: "Petshop 'PATITAS'",
@@ -202,12 +267,26 @@ export default function Projectos() {
     },
   ];
 
+  const displayedProjects = showAll ? projects : projects.slice(0, 4);
+
   return (
     <section id="projects" className="container mx-auto w-2/3 p-4 mb-6">
-      <h3 className="text-4xl sm:text-5xl text-center text-deepblue-500">Projects</h3>
-      {projects.map((project, index) => (
+      <h3 className="text-4xl sm:text-5xl text-center text-deepblue-500">
+        Projects
+      </h3>
+      {displayedProjects.map((project, index) => (
         <EachProject key={index} {...project} />
       ))}
+      {projects.length > 4 && (
+        <div className="text-center mt-6">
+          <button
+            className="px-4 py-2 bg-deepblue-500 text-white rounded hover:bg-deepblue-600 transition"
+            onClick={() => setShowAll(!showAll)}
+          >
+            {showAll ? "Show less" : "Show all"}
+          </button>
+        </div>
+      )}
     </section>
   );
 }
